@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+      <script>
+         $(document).on("pagecreate","#chapter1",function() {
+            $("body").on("swipe",function() {
+               $("span").text("swipe event occurred!!!");
+            });
+         });
+      </script>
+
+        <script>
+         $( document ).on( "pagecreate", "#chapter1", function() {
+            $( document ).on( "swipeleft swiperight", "#chapter1", function( e ) {
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+      </script>
+
+      <!-- <script>
+         $(document).on("pagecreate","#chapter2",function() {
+            $("body").on("swipe",function() {
+               $("span").text("swipe event occurred!!!");
+            });
+         });
+      </script>
+
+        <script>
+         $( document ).on( "pagecreate", "#chapter2", function() {
+            $( document ).on( "swipeleft swiperight", "#chapter2", function( e ) {
+               if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+                  if ( e.type === "swipeleft" ) {
+                     $( "#right-panel" ).panel( "open" );
+                  } else if ( e.type === "swiperight" ) {
+                     $( "#left-panel" ).panel( "open" );
+                  }
+               }
+            });
+         });
+      </script> -->
+   </head>
+
+  
+      
+   <body>
+      <div data-role = "page" id = "chapter1">
+      
+         <div data-role = "header">
+        
+            <h1>Last Leaf</h1>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+            <span style = "color:orange"></span>
+             
+         </div>
+
+
+    <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <ul data-role = "listview">
+              <li><a href="#chapter2"> 
+              <img src="img/leaf.jpeg">Last Leaf</a></li>
+              <li><a href="#chapter2">
+              <img src="img/2satate.jpeg"> 2 States</a></li>
+              <li><a href="#chapter2">
+              <img src="img/gf.jpeg"> Half Girlfriend</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img4.jpeg">3 Mistakes of My life</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img5.jpeg"> One Indian Girl</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img6.jpeg"> Five Points Someone</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img7.jpeg"> One at call center</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img8.jpeg"> What Young Indian Wants</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img9.jpeg">Revolution 2020</a></li>
+
+
+            </ul>
+            <br>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close</a>
+         </div>
+        
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Introduction</h2>
+            <p>"The Last Leaf" is a short story by O. Henry published in 1907 in his collection The Trimmed Lamp and Other Stories.
+
+The story is set in Greenwich Village. It tells the story of an old artist who saves the life of a young artist, dying of pneumonia, by giving her the will to live. She can see a tree through the window gradually losing its leaves, and has taken it into her head that she will die when the last leaf falls. Seemingly, it never does fall, and she survives. We learn that in reality the tree lost all its leaves. What what she thought she saw was a leaf, painted on the wall with perfect realism, by the old artist. The old artist dies of pneumonia contracted while being out in the wet and cold, painting the last leaf.
+
+
+
+</p>
+<p>
+    <!-- Go to Page 2</a> -->
+   <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+               ui-btn-inline" href="library.html" data-transition = "turn"></a>
+         </div>
+         
+         <div class = "ui-block-b">
+            <a class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+               ui-btn-inline" href="library.html" data-transition = "turn"></a>
+         </div>
+         
+         
+         <div class = "ui-block-e">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter2" data-transition = "turn"></a>
+         </div>
+      </div>
+
+       
+   
+</p>
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyrights by MADT Fall2017</h1>
+         </div>
+      </div>
+
+      <div data-role = "page" data-close-btn = "right" id = "chapter2" data-corners = "false" 
+         data-overlay-theme = "b">
+         <div data-role = "header">
+            <h1>Chapter 1</h1>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+         </div>
+
+         <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <ul data-role = "listview">
+              <li><a href="#chapter2"> 
+              <img src="img/leaf.jpeg">Last Leaf</a></li>
+              <li><a href="#chapter2">
+              <img src="img/2satate.jpeg"> 2 States</a></li>
+              <li><a href="#chapter2">
+              <img src="img/gf.jpeg"> Half Girlfriend</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img4.jpeg">3 Mistakes of My life</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img5.jpeg"> One Indian Girl</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img6.jpeg"> Five Points Someone</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img7.jpeg"> One at call center</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img8.jpeg"> What Young Indian Wants</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img9.jpeg">Revolution 2020</a></li>
+
+
+            </ul>
+            <br>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close</a>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Last Leaf</h2>
+            <p>In a little district west of Washington Square the streets have run crazy and broken themselves into small strips called "places." These "places" make strange angles and curves. One Street crosses itself a time or two. An artist once discovered a valuable possibility in this street. Suppose a collector with a bill for paints, paper and canvas should, in traversing this route, suddenly meet himself coming back, without a cent having been paid on account!
+
+     So, to quaint old Greenwich Village the art people soon came prowling, hunting for north windows and eighteenth-century gables and Dutch attics and low rents. Then they imported some pewter mugs and a chafing dish or two from Sixth Avenue, and became a "colony."
+
+     At the top of a squatty, three-story brick Sue and Johnsy had their studio. "Johnsy" was familiar for Joanna. One was from Maine; the other from California. They had met at the table d'hôte of an Eighth Street "Delmonico's," and found their tastes in art, chicory salad and bishop sleeves so congenial that the joint studio resulted.
+
+     That was in May. In November a cold, unseen stranger, whom the doctors called Pneumonia, stalked about the colony, touching one here and there with his icy fingers. Over on the east side this ravager strode boldly, smiting his victims by scores, but his feet trod slowly through the maze of the narrow and moss-grown "places."
+
+     Mr. Pneumonia was not what you would call a chivalric old gentleman. A mite of a little woman with blood thinned by California zephyrs was hardly fair game for the red-fisted, short-breathed old duffer. But Johnsy he smote; and she lay, scarcely moving, on her painted iron bedstead, looking through the small Dutch window-panes at the blank side of the next brick house.
+
+     One morning the busy doctor invited Sue into the hallway with a shaggy, grey eyebrow.
+
+     "She has one chance in - let us say, ten," he said, as he shook down the mercury in his clinical thermometer. " And that chance is for her to want to live. This way people have of lining-u on the side of the undertaker makes the entire pharmacopoeia look silly. Your little lady has made up her mind that she's not going to get well. Has she anything on her mind?"
+</p>
+
+<p>
+  
+   <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter1" data-transition = "turn"></a>
+         </div>
+         
+         <div class = "ui-block-b">
+            <a class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter1" data-transition = "turn"></a>
+         </div>
+         
+         
+         <div class = "ui-block-e">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter3" data-transition = "turn"></a>
+         </div>
+      </div>
+
+</p>
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyrights by MADT Fall2017</h1>
+         </div>
+      </div>
+
+
+       <div data-role = "page" id = "chapter3" data-corners = "false" 
+         data-overlay-theme = "b">
+         <div data-role = "header">
+            <h1>Chapter 2</h1>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+         </div>
+
+         <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <ul data-role = "listview">
+              <li><a href="#chapter2"> 
+              <img src="img/leaf.jpeg">Last Leaf</a></li>
+              <li><a href="#chapter2">
+              <img src="img/2satate.jpeg"> 2 States</a></li>
+              <li><a href="#chapter2">
+              <img src="img/gf.jpeg"> Half Girlfriend</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img4.jpeg">3 Mistakes of My life</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img5.jpeg"> One Indian Girl</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img6.jpeg"> Five Points Someone</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img7.jpeg"> One at call center</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img8.jpeg"> What Young Indian Wants</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img9.jpeg">Revolution 2020</a></li>
+
+
+            </ul>
+            <br>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close</a>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Chapter 2</h2>
+            <p>"What is it, dear?" asked Sue.
+
+     "Six," said Johnsy, in almost a whisper. "They're falling faster now. Three days ago there were almost a hundred. It made my head ache to count them. But now it's easy. There goes another one. There are only five left now."
+
+     "Five what, dear? Tell your Sudie."
+
+     "Leaves. On the ivy vine. When the last one falls I must go, too. I've known that for three days. Didn't the doctor tell you?"
+
+     "Oh, I never heard of such nonsense," complained Sue, with magnificent scorn. "What have old ivy leaves to do with your getting well? And you used to love that vine so, you naughty girl. Don't be a goosey. Why, the doctor told me this morning that your chances for getting well real soon were - let's see exactly what he said - he said the chances were ten to one! Why, that's almost as good a chance as we have in New York when we ride on the street cars or walk past a new building. Try to take some broth now, and let Sudie go back to her drawing, so she can sell the editor man with it, and buy port wine for her sick child, and pork chops for her greedy self."
+
+     "You needn't get any more wine," said Johnsy, keeping her eyes fixed out the window. "There goes another. No, I don't want any broth. That leaves just four. I want to see the last one fall before it gets dark. Then I'll go, too."
+
+     "Johnsy, dear," said Sue, bending over her, "will you promise me to keep your eyes closed, and not look out the window until I am done working? I must hand those drawings in by to-morrow. I need the light, or I would draw the shade down."
+
+     "Couldn't you draw in the other room?" asked Johnsy, coldly.
+
+     "I'd rather be here by you," said Sue. "Beside, I don't want you to keep looking at those silly ivy leaves."
+</p>
+
+<p>
+   
+   <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter2" data-transition = "turn"></a>
+         </div>
+         
+         <div class = "ui-block-b">
+            <a class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter1" data-transition = "turn"></a>
+         </div>
+         
+         
+         <div class = "ui-block-e">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter4" data-transition = "turn"></a>
+         </div>
+      </div>
+
+</p>
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyrights by MADT Fall2017</h1>
+         </div>
+      </div>
+
+
+      <div data-role = "page" data-close-btn = "right" id = "chapter4" data-corners = "false" 
+         data-overlay-theme = "b">
+         <div data-role = "header">
+            <h1>Chapter 3</h1>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+         </div>
+
+         <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <ul data-role = "listview">
+              <li><a href="#chapter2"> 
+              <img src="img/leaf.jpeg">Last Leaf</a></li>
+              <li><a href="#chapter2">
+              <img src="img/2satate.jpeg"> 2 States</a></li>
+              <li><a href="#chapter2">
+              <img src="img/gf.jpeg"> Half Girlfriend</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img4.jpeg">3 Mistakes of My life</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img5.jpeg"> One Indian Girl</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img6.jpeg"> Five Points Someone</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img7.jpeg"> One at call center</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img8.jpeg"> What Young Indian Wants</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img9.jpeg">Revolution 2020</a></li>
+
+
+            </ul>
+            <br>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close</a>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Last Leaf</h2>
+            <p>"What is it, dear?" asked Sue.
+
+     "Six," said Johnsy, in almost a whisper. "They're falling faster now. Three days ago there were almost a hundred. It made my head ache to count them. But now it's easy. There goes another one. There are only five left now."
+
+     "Five what, dear? Tell your Sudie."
+
+     "Leaves. On the ivy vine. When the last one falls I must go, too. I've known that for three days. Didn't the doctor tell you?"
+
+     "Oh, I never heard of such nonsense," complained Sue, with magnificent scorn. "What have old ivy leaves to do with your getting well? And you used to love that vine so, you naughty girl. Don't be a goosey. Why, the doctor told me this morning that your chances for getting well real soon were - let's see exactly what he said - he said the chances were ten to one! Why, that's almost as good a chance as we have in New York when we ride on the street cars or walk past a new building. Try to take some broth now, and let Sudie go back to her drawing, so she can sell the editor man with it, and buy port wine for her sick child, and pork chops for her greedy self."
+
+     "You needn't get any more wine," said Johnsy, keeping her eyes fixed out the window. "There goes another. No, I don't want any broth. That leaves just four. I want to see the last one fall before it gets dark. Then I'll go, too."
+
+     "Johnsy, dear," said Sue, bending over her, "will you promise me to keep your eyes closed, and not look out the window until I am done working? I must hand those drawings in by to-morrow. I need the light, or I would draw the shade down."
+
+     "Couldn't you draw in the other room?" asked Johnsy, coldly.
+
+     "I'd rather be here by you," said Sue. "Beside, I don't want you to keep looking at those silly ivy leaves."
+</p>
+
+<p>
+   
+   <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter3" data-transition = "turn"></a>
+         </div>
+         
+         <div class = "ui-block-b">
+            <a class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter1" data-transition = "turn"></a>
+         </div>
+         
+         
+         <div class = "ui-block-e">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter5" data-transition = "turn"></a>
+         </div>
+      </div>
+
+</p>
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyrights by MADT Fall2017</h1>
+         </div>
+      </div>
+
+
+       <div data-role = "page" data-close-btn = "right" id = "chapter5" data-corners = "false" 
+         data-overlay-theme = "b">
+         <div data-role = "header">
+            <h1>Chapter 4</h1>
+            <a href = "#left-panel" data-icon = "carat-r" data-iconpos = "notext"  
+               class = "ui-nodisc-icon">Open left panel</a>
+         </div>
+
+         <div data-role = "panel" id = "left-panel" data-theme = "b">
+            <ul data-role = "listview">
+              <li><a href="#chapter2"> 
+              <img src="img/leaf.jpeg">Last Leaf</a></li>
+              <li><a href="#chapter2">
+              <img src="img/2satate.jpeg"> 2 States</a></li>
+              <li><a href="#chapter2">
+              <img src="img/gf.jpeg"> Half Girlfriend</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img4.jpeg">3 Mistakes of My life</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img5.jpeg"> One Indian Girl</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img6.jpeg"> Five Points Someone</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img7.jpeg"> One at call center</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img8.jpeg"> What Young Indian Wants</a></li>
+              <li><a href="#chapter2">
+              <img src="img/img9.jpeg">Revolution 2020</a></li>
+
+
+            </ul>
+            <br>
+            <a href = "#" data-rel = "close" class = "ui-btn ui-btn-inline ui-icon-delete 
+               ui-btn-icon-left">Close</a>
+         </div>
+
+         <div data-role = "main" class = "ui-content">
+            <h2>Last Leaf</h2>
+            <p>"Vass!" he cried. "Is dere people in de world mit der foolishness to die because leafs dey drop off from a confounded vine? I haf not heard of such a thing. No, I will not bose as a model for your fool hermit-dunderhead. Vy do you allow dot silly pusiness to come in der brain of her? Ach, dot poor leetle Miss Yohnsy."
+
+     "She is very ill and weak," said Sue, "and the fever has left her mind morbid and full of strange fancies. Very well, Mr. Behrman, if you do not care to pose for me, you needn't. But I think you are a horrid old - old flibbertigibbet."
+
+     "You are just like a woman!" yelled Behrman. "Who said I will not bose? Go on. I come mit you. For half an hour I haf peen trying to say dot I am ready to bose. Gott! dis is not any blace in which one so goot as Miss Yohnsy shall lie sick. Some day I vill baint a masterpiece, and ve shall all go away. Gott! yes."
+
+     Johnsy was sleeping when they went upstairs. Sue pulled the shade down to the window-sill, and motioned Behrman into the other room. In there they peered out the window fearfully at the ivy vine. Then they looked at each other for a moment without speaking. A persistent, cold rain was falling, mingled with snow. Behrman, in his old blue shirt, took his seat as the hermit miner on an upturned kettle for a rock.
+
+     When Sue awoke from an hour's sleep the next morning she found Johnsy with dull, wide-open eyes staring at the drawn green shade.
+
+     "Pull it up; I want to see," she ordered, in a whisper.
+
+     Wearily Sue obeyed.
+
+     But, lo! after the beating rain and fierce gusts of wind that had endured through the livelong night, there yet stood out against the brick wall one ivy leaf. It was the last one on the vine. Still dark green near its stem, with its serrated edges tinted with the yellow of dissolution and decay, it hung bravely from the branch some twenty feet above the ground.
+</p>
+
+<p>
+   <a href="#chapter1" data-transition = "turn"> Back</a>
+    <div class = "ui-grid-b">
+         <div class = "ui-block-a">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter4" data-transition = "turn"></a>
+         </div>
+         
+         <div class = "ui-block-b">
+            <a class = "ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter1" data-transition = "turn"></a>
+         </div>
+         
+         
+         <div class = "ui-block-e">
+            <a class = "ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext 
+               ui-btn-inline" href="#chapter5" data-transition = "turn"></a>
+         </div>
+      </div>
+
+
+</p>
+         </div>
+
+         <div data-role = "footer">
+            <h1>Copyrights by MADT Fall2017</h1>
+         </div>
+      </div>
+
+
+
+   </body>
+</html>
+
+
